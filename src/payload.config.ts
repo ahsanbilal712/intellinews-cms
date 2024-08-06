@@ -8,6 +8,7 @@ import { buildConfig } from 'payload/config';
 
 import Users from './collections/Users';
 import NewsSummaries from './collections/News_summaries'; // Import the NewsSummaries collection
+import NewsData from './collections/News_data';
 
 export default buildConfig({
   admin: {
@@ -17,7 +18,8 @@ export default buildConfig({
   editor: slateEditor({}),
   collections: [
     Users,
-    NewsSummaries, // Add the NewsSummaries collection
+    NewsData,
+    // NewsSummaries // Add the NewsSummaries collection
   ],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),

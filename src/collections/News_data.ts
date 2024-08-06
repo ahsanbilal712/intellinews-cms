@@ -2,8 +2,8 @@ import { CollectionConfig } from 'payload/types';
 
 
 
-const NewsSummaries: CollectionConfig = {
-    slug: 'news_summaries',
+const NewsData: CollectionConfig = {
+    slug: 'data_news',
     admin: {
         useAsTitle: 'Headline', // Field name that will be used as the title in the admin panel
     },
@@ -67,4 +67,4 @@ const NewsSummaries: CollectionConfig = {
     ],
 };
 
-export default NewsSummaries;
+export default NewsData;
