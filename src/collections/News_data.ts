@@ -43,6 +43,12 @@ const NewsData: CollectionConfig = {
                     label: 'Source URL', // Optional: Label for better readability
                     required: true,
                 },
+                {
+                    name: 'keyfacts', // Ensure this matches the exact field name in MongoDB
+                    type: 'textarea',
+                    label: 'Key Facts', // Optional: Label for better readability
+                    required: true,
+                },
             ],
         },
         {
